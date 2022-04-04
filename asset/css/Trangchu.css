@@ -191,7 +191,7 @@
       position: relative;
       height: var(--header-height);
       text-align: center;
-      padding-top: 60px;
+      padding-top: 30px;
       padding-bottom: 20px;
 }
 .content_section--heading{

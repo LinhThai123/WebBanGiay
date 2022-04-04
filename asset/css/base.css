@@ -27,9 +27,15 @@ html {
       grid-template-columns: 23% 23% 23% 23%;
       display: grid;
       grid-gap:2px;
+      margin-left: 60px;
 }
 .body-content-3 {
       grid-template-columns:32% 32% 32% ;
+      display: grid;
+      grid-gap:2px;
+}
+.body-content-2 {
+      grid-template-columns: 49% 49% ; 
       display: grid;
       grid-gap:2px;
 }

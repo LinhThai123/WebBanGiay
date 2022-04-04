@@ -1,0 +1,70 @@
+/* mobile && tablet */
+@media screen and (max-width: 1023px) {
+      .hide-on-mobile-tablet {
+            display: none ; 
+      }
+      .header_nav--menu-bar{
+            display:block;
+      }   
+}
+/* Tablet */
+@media only screen and (min-width:768px){
+      .hide-on-tablet {
+            display: none ; 
+      }
+      .home-product {
+            margin-left: 10px;
+      }
+        .header_nav_logo-img{
+            height : 25px ; 
+            margin : 16px 0px ; 
+            margin-left: 40px; 
+       }
+}
+/* Mobile */
+@media screen and (max-width : 739px) {
+      .hide-on-mobile {
+            display: none ; 
+      }
+      .header_nav--menu-bar{
+            display:block;
+      }
+      .header_nav_logo-img{
+           height : 25px ; 
+           margin : 16px 0px ; 
+           margin-left: 40px; 
+      }
+      .header_nav--menu-bar {
+            position: absolute ; 
+            top:0px; 
+            left:10px; 
+      }
+      .header_nav_account_list--item{
+            padding : 0px 10px ; 
+      }   
+      .slider_text_content {
+            font-size:22px ; 
+            top : 10px ; 
+      }
+      .slider_text-headding {
+            font-size:20px ; 
+            margin-bottom : 0px ; 
+      }
+      .slider_text_sub {
+            font-size:13px ; 
+      }
+      .row_link {
+            margin: 10px 0px;
+      }
+      .body-content-2 {
+            grid-template-columns:auto;
+            display: grid;
+            grid-gap: 10px;
+      }  
+      .home_news_item--content {
+            font-size:16px ; 
+      }
+      .home_news_item--evalute{
+            font-size:18px ; 
+      }
+}

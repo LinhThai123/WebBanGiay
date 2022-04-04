@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/Trangchu.css" />
     <link rel="stylesheet" href="asset/css/base.css" />
+    <link rel="stylesheet" href="asset/css/ResponsiveHome.css">
     <link
       rel="stylesheet"
       href="asset/fontawesome-free-5.15.4-web/css/all.min.css"
@@ -17,7 +18,7 @@
     <div class="app">
       <header class="header">
         <div class="grid">
-          <div class="header_navbar_comunity" style="top: 0;">
+          <div class="header_navbar_comunity hide-on-mobile-tablet"  style="top: 0;">
             <div class="header_navbar_comunity-social grid_column-6">
               <ul class="header_nav_social-list">
                 <li class="header_nav_social_list-item">
@@ -45,7 +46,7 @@
                 </li>
               </ul>
             </div>
-            <div class="header_nav_comunity_infor grid-column-6">
+            <div class="header_nav_comunity_infor ">
               <ul class="header_nav_infor-list">
                 <li class="header_nav_infor_list-item header_nav_infor_list_item--separate">
                   <a href="" class="header_nav_infor_item--link">Hỗ trợ</a>
@@ -64,12 +65,15 @@
           <div class="grid">
             <div class="header_nav_shop">
               <div class="header_nav--logo">
-                <a href="" class="header_nav_logo--brand">
-                  <img src="asset/img/logo/logo_shopman.png" alt="Fail" style="height: 50px;">
+                <div class="header_nav--menu-bar">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <a href="Trangchu.html" class="header_nav_logo--brand">
+                  <img class="header_nav_logo-img" src="asset/img/logo/logo_shopman.png" alt="Fail">
                 </a>
               </div>
-              <div class="header_nav--menu">
-                <ul class="header_nav_menu--list">
+              <div class="header_nav--menu  ">
+                <ul class="header_nav_menu--list hide-on-mobile-tablet">
                   <li class="header_nav_list--item">
                     <a href="" class="header_nav_item--link">Trang chủ</a>
                   </li>
@@ -87,8 +91,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="header_nav--account">
-                 <ul class="header_nav_account--list">
+              <div class="header_nav--account ">
+                 <ul class="header_nav_account--list ">
                   <li class="header_nav_account_list--item">
                     <a href="" class="header_nav_account_item--link">
                       <i class="header_nav_account--icon--cart fas fa-cart-arrow-down"></i>
@@ -99,13 +103,13 @@
                       <i class="header_nav_account--icon fas fa-search"></i>
                      </a>
                    </li>
-                   <li class="header_nav_account_list--item">
+                   <!-- <li class="header_nav_account_list--item">
                     <a href="" class="header_nav_account_item--link">
                       <i class="header_nav_account--icon far fa-heart"></i>
                     </a>
-                  </li>
+                  </li> -->
                   <li class="header_nav_account_list--item">
-                    <a href="" class="header_nav_account_item--link">
+                    <a href="#modal" class="header_nav_account_item--link">
                       <i class="header_nav_account--icon fas fa-user-circle"></i>
                     </a>
                   </li>
@@ -129,13 +133,13 @@
           <!-- Product New  -->
           <div class="product grid">
             <div class="content_section">
-              <span class="empty_1"></span>
+              <span class="empty_1 hide-on-mobile-tablet"></span>
               <h1 class="content_section--heading">Sản phẩm nổi bật </h1>
-              <span class="empty_2"></span>
+              <span class="empty_2 hide-on-mobile-tablet"></span>
               <span class="content_section--sub">Chúng tôi luôn luôn cập nhật các sản phẩm mới nhất </span>
             </div>
             <div class=" home_product">
-              <div class="grid_row">
+              <div class="body-content">
                 <div class="grid_column-2">
                   <!-- Product Item -->
                   <div class="home__product_item">
@@ -269,14 +273,14 @@
           <!-- Xu Hướng  -->
           <div class="product grid ">
             <div class="content_section">
-              <span class="empty_3"></span>
+              <span class="empty_3 hide-on-mobile-tablet"></span>
               <h1 class="content_section--heading">Khám phá</h1>
-              <span class="empty_4"></span>
+              <span class="empty_4 hide-on-mobile-tablet"></span>
               <span class="content_section--sub">Các sản phẩm có mặt tại cửa hàng </span>
             </div>
             <!-- Product of shop -->
             <div class=" home_product">
-              <div class="grid_row ">
+              <div class="body-content">
                 <div class="grid_column-2 ">
                   <!-- Product Item -->
                   <div class="home__product_item">
@@ -404,7 +408,7 @@
               </div>
             </div>  
             <div class=" home_product">
-              <div class="grid_row">
+              <div class="body-content">
                 <div class="grid_column-2 ">
                   <!-- Product Item -->
                   <div class="home__product_item">
@@ -531,12 +535,12 @@
                 </div>
               </div>
             </div>       
-          </div>
-          <div class="product_btn--more">
-            <div class="product_btn_more-item">
-              <a href="" class="product_btn_more--link">Xem Thêm</a>
+          </div>    
+            <div class="product_btn--more grid">
+              <div class="product_btn_more-item">
+                <a href="" class="product_btn_more--link">Xem Thêm</a>
+              </div>
             </div>
-          </div>
         <!-- Banner -->
         <div class="product_banner--adds">
           <div class="grid_column-6 product_banner_adds-item ">
@@ -548,9 +552,9 @@
         </div>
         <!-- News -->
         <div class="content_section">
-          <span class="empty_5"></span>
+          <span class="empty_5 hide-on-mobile-tablet"></span>
           <h1 class="content_section--heading">Bảng Tin</h1>
-          <span class="empty_6"></span>
+          <span class="empty_6 hide-on-mobile-tablet"></span>
           <span class="content_section--sub">Tin tức về giày sneaker</span>
         </div>
         <!-- News -->
@@ -617,7 +621,7 @@
              </div>
            </div>
          </div>
-         <div class="product_btn--more">
+         <div class="product_btn--more grid">
           <div class="product_btn_more-item">
             <a href="" class="product_btn_more--link">Xem Thêm</a>
           </div>
@@ -629,7 +633,7 @@
       <footer class="footer">
         <div class="container_footer">
           <div class="grid">
-            <div class="grid__row">
+            <div class="body-content">
               <div class="grid_column-2">
                 <div class="footer_item">
                   <div class="footer_item-img">
@@ -737,11 +741,68 @@
                     </ul>
                   </div>
                 </div>
-              </div>>
+              </div>
             </div>
           </div>
         </div>
       </footer>
+      <!-- Form Đăng nhập đăng ký  -->
+      <div class="modal" id="modal">
+        <div class="modal_overlay">
+          <a href="#" class="modal__close"></a>
+        </div>
+        <div class="modal_body">         
+            <!-- Register--form -->
+            <!-- <div class="auth-form">
+              <div class="auth-form__container">
+                <div class="auth-form__header">
+                  <span class="auth-form__heading">Đăng Ký</span>
+                  <span class="auth-form_switch-btn">Đăng Nhập</span>
+                </div>
+              <div class="auth-form__form">
+                <div class="auth-form_group">
+                  <input type="text" class="auth-form__input" placeholder="Email address"> 
+                </div>
+                <div class="auth-form_group">
+                  <input type="password" class="auth-form__input" placeholder="Password">  
+                </div>
+                <div class="auth-form_group">
+                  <input type="password" class="auth-form__input" placeholder="Enter the password"> 
+                </div>
+              </div>
+              <div class="auth-form__control">
+                <button class="btn btn--primary">Đăng Ký </button>
+              </div>
+              </div>
+            </div> -->
+            <!-- Login--form --> 
+            <div class="auth-form">
+              <div class="auth-form__container">
+                <div class="auth-form__header">
+                  <span class="auth-form__heading">Đăng Nhập</span>
+                  <span class="auth-form_switch-btn">Đăng Ký</span>
+                </div>
+              <div class="auth-form__form">
+                <div class="auth-form_group">
+                  <input type="text" class="auth-form__input" placeholder="Email address"> 
+                </div>
+                <div class="auth-form_group">
+                  <input type="password" class="auth-form__input" placeholder="Password">  
+                </div>              
+              </div>
+              <div class="auth-form__aside">
+                <a href="" class="auth-form_help--link-pass">Quên mật khẩu</a>
+                <span class="auth-form__sprate">|</span>
+                <a href="" class="auth-form_help--link">Trợ giúp</a>
+              </div>
+              <div class="auth-form__control">
+                <button class="btn btn--primary">Đăng Nhập </button>
+              </div>
+            </div>
+            
+            </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

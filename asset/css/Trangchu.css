@@ -76,11 +76,17 @@
 }
 .header_nav_shop{
       display: flex;
-      justify-content: space-between;
+      height: var(--header-height);
+      justify-content: space-around;
 }
 .header_nav--logo{
      padding-top: 25px;
      padding-bottom: 25px;
+     display:flex ; 
+     position: relative;
+}
+.header_nav_logo-img {
+      height: 5rem;
 }
 .header_nav_logo--brand:hover{
       cursor: pointer;
@@ -132,6 +138,11 @@
 .header_nav_account_item--link:hover,
 .header_nav_account--icon:hover {
       cursor: pointer;
+}
+.header_nav--menu-bar {
+      font-size: 2.2rem ; 
+      margin : 41px 0px; 
+      display:none ;  
 }
 /*Main of Web */
 
@@ -209,12 +220,10 @@
       transform: translateX(-50%);margin-top: 60px;
 }
 /*Product Item*/
-.grid_row{
-      display: flex;
-      flex-direction: row;
-}
+
 .home_product{
-      margin: 7rem 5px;
+      margin-top: 50px;
+      margin-bottom:30px ; 
 } 
 .home__product_item{
       background-color: var(--primary-color);
@@ -298,12 +307,11 @@
       justify-content: center;
 }
 .home_product_item-percent{
-      font-size: 1.5rem;
+      font-size: 15px;
       color: var(--white-color);
       line-height: 20px;
       font-weight: 600;
       align-items: center;
-      padding-top: 3px;
 }
 .home_product_item--favorite{
       position: absolute;
@@ -365,11 +373,12 @@
       background-color: rgb(151, 151, 151);
 }
 .product_btn--more{
-      display: flex;
+      display : flex;
+      justify-content:center;
       width: 150px;
-      height: 50px;
+      height: 40px;
       line-height: 24px; 
-      margin: 30px 0 ;
+      margin: 30px 0px ;
       margin-left: 44.5%;
       padding: 0 12px;
 }
@@ -500,6 +509,7 @@
 }
 /* Footer of Shop */
 .container_footer{
+      margin-top: 30px;
       height: var(--footer-height);
       background-color: rgb(70,76,87);
 }
@@ -602,4 +612,97 @@
       line-height: 25px;
 }
 
-
+/* Đăng nhập Đăng Ký */
+/* authen-modal */
+.auth-form {
+      width : 500px ; 
+}
+.auth-form__container{
+      padding : 10px 32px ; 
+}
+.auth-form__header {
+      display : flex;
+      align-items : center;
+      justify-content : space-between; 
+      margin-top :15px ; 
+      padding: 0 12px;
+}
+.auth-form__heading{
+      font-size :2rem ; 
+      font-weight : 600 ; 
+      color: var(--text-color);
+}
+.auth-form_switch-btn{
+      font-size :1.4rem ;
+      color : #f54f29 ;
+      font-weight :600; 
+      cursor: pointer;
+}
+.auth-form__form { 
+      margin-top:32px; 
+}
+.auth-form__input{
+      width:100%;
+      height:50px;
+      margin-bottom: 20px; 
+      padding: 0 12px ; 
+      font-size : 1.4rem ; 
+      border: 1px solid var( --border-color) ; 
+      border-radius: 2px;
+      outline:none;
+}
+.auth-form__input:focus{
+      border-color: #888;
+}
+.auth-form__control {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 15px;
+}
+.btn {
+      min-width: 160px;
+      height :40px ; 
+      text-decoration: none;
+      border : none ; 
+      border-radius: 2px ; 
+      font-size:1.5rem; 
+      display: flex;
+      align-items:center;
+      justify-content:center ; 
+}
+.btn.btn--primary {
+      color: var(--white-color) ;
+      background-color: #f54f29 ; 
+      outline:none;
+      cursor: pointer;
+}
+.auth-form__aside{
+      display: flex;
+      justify-content: flex-end; 
+      margin : 0 10px ; 
+      margin-bottom:16px ; 
+      font-size:1.4rem ; 
+     
+}
+.auth-form_help--link-pass{
+      margin : 0 8px ; 
+      text-decoration: none;
+      color: #f54f29 ; 
+}
+.auth-form__sprate {
+      margin : 0 8px ; 
+      text-decoration: none;
+      color: #888 ; 
+}
+.auth-form_help--link {
+      margin : 0 8px ; 
+      text-decoration: none;
+      color: #888 ; 
+}
+.auth-form_help--link:hover {
+      color: #333 ; 
+      cursor: pointer;
+}
+.auth-form_help--link-pass:hover {
+      font-size: 1.5rem;
+}

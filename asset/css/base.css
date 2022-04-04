@@ -23,6 +23,16 @@ html {
       max-width: 100%;
       margin: 0 auto;
 }
+.body-content{
+      grid-template-columns: 23% 23% 23% 23%;
+      display: grid;
+      grid-gap:2px;
+}
+.body-content-3 {
+      grid-template-columns:32% 32% 32% ;
+      display: grid;
+      grid-gap:2px;
+}
 .grid__row {
       display: flex; 
       flex-wrap: wrap;
@@ -36,9 +46,8 @@ html {
       width: 33.33%;
 }
 .grid_column-2 {
-      padding-left: 5px;
+      padding-left: 8px;
       padding-right: 5px;
-      width: 25%;
 }
 .grid_column-10 {
       padding-left: 5px;
@@ -48,10 +57,68 @@ html {
 .grid_column-card {
       padding-left: 5px;
       padding-right: 5px;
-      width: 33.33%;
+      width: 25%;
 }
 .grid_column-6 {
       width: 50%; 
       padding-left: 5px;
       padding-right: 5px;
 }
+ @keyframes fadeIn {
+       from { opacity:0 ;}
+       to {opacity:1 ;}
+ }
+ @keyframes growth {
+       from { 
+             transform: scale(var(--growth-from)) ; 
+       }
+       to {
+             transform : scale(var(--growth-to)) ;
+      }
+ }
+/* Modal */
+.modal{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      animation: fadeIn linear 0.1s ;  
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity linear 0.2s ; 
+} 
+.modal__close {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+}
+.modal:target{
+   visibility:visible;
+   opacity: 1;
+}
+.modal_overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color:rgb(0, 0, 0 , 0.2);
+}
+.modal_body {
+      --growth-from : 0.7s ; 
+      --growth-to : 1s; 
+      width: 500px;
+      background-color:var(--white-color) ; 
+      margin : auto;
+      position : relative;
+      z-index: 1;
+      border-radius: 5px;
+      animation : growth linear 0.1s ; 
+}
+/* button style */
+
+/* btn.btn.disabled{
+      cursor : default ; 
+      filter: brightness(80%);
+} */
+

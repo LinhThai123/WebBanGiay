@@ -1,0 +1,15 @@
+body{
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+}
+.form-login {
+      width: 300px;
+	height: 350px;
+	/*background-color: green;*/
+	text-align: center;
+	border:1px solid grey;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: white;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="asset/css/Trangchu.css" />
     <link rel="stylesheet" href="asset/css/base.css" />
     <link rel="stylesheet" href="asset/css/ResponsiveHome.css">
+    <link rel="stylesheet" href="asset/css/login_logout.css"/>
     <link
       rel="stylesheet"
       href="asset/fontawesome-free-5.15.4-web/css/all.min.css"
@@ -755,55 +756,62 @@
         </div>
         <div class="modal_body">         
             <!-- Register--form -->
-            <!-- <div class="auth-form">
-              <div class="auth-form__container">
-                <div class="auth-form__header">
-                  <span class="auth-form__heading">Đăng Ký</span>
-                  <span class="auth-form_switch-btn">Đăng Nhập</span>
-                </div>
-              <div class="auth-form__form">
-                <div class="auth-form_group">
-                  <input type="text" class="auth-form__input" placeholder="Email address"> 
-                </div>
-                <div class="auth-form_group">
-                  <input type="password" class="auth-form__input" placeholder="Password">  
-                </div>
-                <div class="auth-form_group">
-                  <input type="password" class="auth-form__input" placeholder="Enter the password"> 
-                </div>
+            <div class="wrapper">
+              <div class="title-text">
+                 <div class="title login">
+                    Login
+                 </div>
+                 <div class="title signup">
+                    Signup
+                 </div>
               </div>
-              <div class="auth-form__control">
-                <button class="btn btn--primary">Đăng Ký </button>
+              <div class="form-container">
+                 <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup" checked>
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Signup</label>
+                    <div class="slider-tab"></div>
+                 </div>
+                 <div class="form-inner">
+                    <form action="#" class="login">
+                       <div class="field">
+                          <input type="text" placeholder="Email Address">
+                       </div>
+                       <div class="field">
+                          <input type="password" placeholder="Password">
+                       </div>
+                       <div class="pass-link">
+                          <a href="#">Forgot password?</a>
+                       </div>
+                       <div class="field btn">
+                          <div class="btn-layer"></div>
+                          <input type="submit" value="Login">
+                       </div>
+                       <div class="signup-link">
+                          Not a member? <a href="">Signup now</a>
+                       </div>
+                    </form>
+                    <form action="#" class="signup">
+                       <div class="field">
+                          <input type="text" placeholder="Email Address">
+                       </div>
+                       <div class="field">
+                          <input type="password" placeholder="Password" >
+                       </div>
+                       <div class="field">
+                          <input type="password" placeholder="Confirm password">
+                       </div>
+                       <div class="field btn">
+                          <div class="btn-layer"></div>
+                          <input type="submit" value="Signup">
+                       </div>
+                    </form>
+                 </div>
               </div>
-              </div>
-            </div> -->
-            <!-- Login--form --> 
-            <div class="auth-form">
-              <div class="auth-form__container">
-                <div class="auth-form__header">
-                  <span class="auth-form__heading">Đăng Nhập</span>
-                  <span class="auth-form_switch-btn">Đăng Ký</span>
-                </div>
-              <div class="auth-form__form">
-                <div class="auth-form_group">
-                  <input type="text" class="auth-form__input" placeholder="Email address"> 
-                </div>
-                <div class="auth-form_group">
-                  <input type="password" class="auth-form__input" placeholder="Password">  
-                </div>              
-              </div>
-              <div class="auth-form__aside">
-                <a href="" class="auth-form_help--link-pass">Quên mật khẩu</a>
-                <span class="auth-form__sprate">|</span>
-                <a href="" class="auth-form_help--link">Trợ giúp</a>
-              </div>
-              <div class="auth-form__control">
-                <button class="btn btn--primary">Đăng Nhập </button>
-              </div>
-            </div>
-            </div>
+           </div> 
         </div>
-      </div>
     </div>
+    <script src="asset/js/login_regester.js"></script>
   </body>
 </html>

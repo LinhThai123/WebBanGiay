@@ -131,7 +131,7 @@ html {
 .modal_body {
       --growth-from : 0.7s ; 
       --growth-to : 1s; 
-      width: 500px;
+      width: 390px;
       background-color:var(--white-color) ; 
       margin : auto;
       position : relative;

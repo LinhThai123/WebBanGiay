@@ -109,4 +109,15 @@
       .home_news_item--evalute{
             font-size:18px ; 
       }
+      .container_footer {
+            height: 250px; 
+      }
+      .footer-content-3 {
+            grid-template-columns: auto;
+            display: grid;
+            grid-gap: 20px;
+      }
+      .footer_item {
+          text-align: center;
+      }
 }

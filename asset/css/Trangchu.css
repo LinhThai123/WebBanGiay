@@ -513,107 +513,35 @@
       height: var(--footer-height);
       background-color: rgb(70,76,87);
 }
-.footer_item{
-      margin-top: 40px;
-      display: block;
+.footer_item {
+      font-size: 16px; 
+      margin-top: 10px;
+      color: var(--white-color) ; 
+      font-family: "Roboto", sans-serif;
+      align-items: center;     
 }
-.footer_item-img{
+.footer_numberphone {
+      margin: 10px 0 ;
 }
-.footer_item_img--logo{
-      height: 45px;
-      width: 75%;
-}
-.footer_item-title {
-      margin-bottom: 5px;
-}
-.footer_item_title-shop{
-      margin-left: 5px;
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--white-color);
-      line-height: 25px;
-}
-.footer_item-address{
-    margin: 20px 0;
-}
-.footer_item-icon {
-      font-size: 2rem;
-      color: #f54f29;
-      margin-left: 5px;
-}
-.footer_item_address-detail{
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 25px;
-      margin: 0 8px;
-      color: #d3d3d3;
-}
-.footer_item_contact-hotline{
-      font-size: 1.4rem;
-      margin: 0 8px;
-      color: #d3d3d3;
-      font-weight: 500;
-      line-height: 25px;
-}
-.footer_item_email{
-      margin: 20px 0;
-}
-.footer_item_email--person{
-      font-size: 1.4rem;
-      color: #d3d3d3;
-      font-weight: 500;
-      margin: 0 8px;
-      line-height: 25px;
-}
-/* Infomation of Shop  */
-.footer_item_content--list{
-      list-style: none;
-      margin-top: 50px;
-      padding-left: 5px;
-}
-.footer-content-2 {
-      grid-template-columns: 49% 49%;
-      display: grid;
-}
-.footer_item--info{
-      color: var(--white-color);
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 25px;
-      margin: 0 0 24px;
-}
-.footer_item--contact{
-      font-size: 1.4rem;
-      margin: 23px 0;
-}
-.footer_item_contact-link{
-      text-decoration: none;
-      color:#d3d3d3 ;
-      font-weight: 600;
-}
-.footer_item--contact:hover,
-.footer_item_contact-link:hover{
-      cursor: pointer;
-      color: #EB3E32;
+.footer_address {
+      margin: 10px 0; 
 }
 /*  Footer Social*/
-.footer_item--follow{
+.footer_social-list {
+      display: flex;
+      margin-left: 20px;
+      display: flex;
+      justify-content:center;
+      list-style: none;
+}
+.footer_social_list-item {
+      text-decoration: none;
+      margin: 0 8px ; 
+}
+.footer_social_item--link {
       color: var(--white-color);
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 25px;
-      margin: 0 0 24px;
-      margin-top: 50px;
 }
-.footer_item--content{
-      margin-top: 10px;
+.footer--icon{
+      font-size:22px ; 
+      margin : 8px 0 ; 
 }
-.footer_item_content--more{
-      font-size: 1.6rem;
-      font-weight: 500;
-      color: #d3d3d3;
-      line-height: 25px;
-}
-
-/* Đăng nhập Đăng Ký */
-/* authen-modal */

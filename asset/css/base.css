@@ -7,7 +7,7 @@
       --icon--twitter : #00d3b9 ; 
       --header-height : 100px ; 
       --header-height--comunity : 50px ; 
-      --footer-height : 400px ; 
+      --footer-height : 80px ; 
 }
 *{
       box-sizing: inherit;
@@ -85,8 +85,9 @@ html {
       padding-right: 5px;
 }
 .footer-content-3 {
-      grid-template-columns: 25% 50% 25%;
+      grid-template-columns: 32% 32% 32%;
       display: grid;
+      grid-gap:20px;
 }
  @keyframes fadeIn {
        from { opacity:0 ;}

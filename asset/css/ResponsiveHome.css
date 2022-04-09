@@ -6,9 +6,6 @@
       .header_nav--menu-bar{
             display:block;
       }
-      .container_footer {
-            height: 800px ; 
-      }
       .header_nav--menu-bar{
             margin-top:10px; 
             font-size:40px;
@@ -51,7 +48,7 @@
               top: 12px;
         }
         .container_footer{
-              height: var(--footer-height);
+              height:100px;
         }
 }
 /* Mobile */
@@ -121,5 +118,16 @@
       }
       .content_section--heading{
             line-height:25px ; 
+      }
+      .container_footer {
+            height: 250px; 
+      }
+      .footer-content-3 {
+            grid-template-columns: auto;
+            display: grid;
+            grid-gap: 20px;
+      }
+      .footer_item {
+          text-align: center;
       }
 }

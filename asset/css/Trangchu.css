@@ -516,7 +516,7 @@
 .footer_item {
       font-size: 16px; 
       margin-top: 10px;
-      color: var(--white-color) ; 
+      color: #fff; 
       font-family: "Roboto", sans-serif;
       align-items: center;     
 }

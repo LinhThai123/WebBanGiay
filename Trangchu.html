@@ -560,9 +560,8 @@
         </div>
         <!-- News -->
          <div class="news grid">
-           <div class="home_news">
-             <div class="grid__row">
-               <div class="grid_column-3 ">
+           <div class="home_news ">
+             <div class=" body-content-3">
                  <div class="home_news-item">
                    <a href="" class="home_news_item--link">
                     <div class="home_news_item-img" style="background-image: url(asset/img/image_product/banner_3.jpg);"></div>
@@ -580,8 +579,6 @@
                     </div>
                    </a>
                  </div>
-               </div>
-               <div class="grid_column-3 ">
                 <div class="home_news-item">
                   <a href="" class="home_news_item--link">
                    <div class="home_news_item-img"style="background-image: url(asset/img/image_product/banner_3.jpg);"></div>
@@ -599,8 +596,6 @@
                    </div>
                   </a>
                 </div>
-              </div>
-              <div class="grid_column-3 ">
                 <div class="home_news-item">
                   <a href="" class="home_news_item--link">
                    <div class="home_news_item-img"style="background-image: url(asset/img/image_product/banner_3.jpg);"></div>
@@ -618,7 +613,6 @@
                    </div>
                   </a>
                 </div>
-              </div>
              </div>
            </div>
          </div>
@@ -680,62 +674,72 @@
         </div>
         <div class="modal_body">         
             <!-- Register--form -->
-            <div class="wrapper">
-              <div class="title-text">
-                 <div class="title login">
-                    Login
-                 </div>
-                 <div class="title signup">
-                    Signup
-                 </div>
+            <div id="container">
+              <div id="title_heading">
+                  <p id="title_heading-login" class="title_heading">Log in</p>
+                  <p id="title_heading-register" class="title_heading">Register</p>
+      
+                  <div id="clear"></div>
               </div>
-              <div class="form-container">
-                 <div class="slide-controls">
-                    <input type="radio" name="slide" id="login" checked>
-                    <input type="radio" name="slide" id="signup" checked>
-                    <label for="login" class="slide login">Login</label>
-                    <label for="signup" class="slide signup">Signup</label>
-                    <div class="slider-tab"></div>
-                 </div>
-                 <div class="form-inner">
-                    <form action="#" class="login">
-                       <div class="field">
-                          <input type="text" placeholder="Email Address">
-                       </div>
-                       <div class="field">
-                          <input type="password" placeholder="Password">
-                       </div>
-                       <div class="pass-link">
-                          <a href="#">Forgot password?</a>
-                       </div>
-                       <div class="field btn">
-                          <div class="btn-layer"></div>
-                          <input type="submit" value="Login">
-                       </div>
-                       <div class="signup-link">
-                          Not a member? <a href="">Signup now</a>
-                       </div>
-                    </form>
-                    <form action="#" class="signup">
-                       <div class="field">
-                          <input type="text" placeholder="Email Address">
-                       </div>
-                       <div class="field">
-                          <input type="password" placeholder="Password" >
-                       </div>
-                       <div class="field">
-                          <input type="password" placeholder="Confirm password">
-                       </div>
-                       <div class="field btn">
-                          <div class="btn-layer"></div>
-                          <input type="submit" value="Signup">
-                       </div>
-                    </form>
-                 </div>
+      
+              <div id="cont">
+                  <div id="login" class="auth_form">
+                      <h3>Sign in</h3>
+                      <div class="sign-in_user">
+                      <input id="user_login" type="text" placeholder="Username"/>
+                      <span class="user_login_err"></span>
+                      </div>                   
+                      <div class="sign-in_password">
+                      <input id="password_login" type="password" placeholder="Password"/>
+                      <span class="pass_login_err"></span>
+                      </div>
+                      <div class="sign-in_submit">
+                      <span class="sign-in-status" runat="server" id="sign_in_status"></span>
+                      <input type="submit" class="btn_login-submit" value="Login"/>
+                      </div>
+                      <p class="forget_password">Forget Password?</p>
+                  </div>
+                  <div id="register" class="auth_form">
+                      <h3>Register</h3>
+                      <div class="sign-up_user">
+                      <input id="user_register" type="text" placeholder="Username"/>
+                      <span class="user_register_err"></span>
+                      </div>
+                      <div class="sign-up_email">
+                      <input id="email_register" type="email" placeholder="Email"/>
+                      <span class="email_register_err"></span>
+                      </div>
+                      <div class="sign-up_phone">
+                      <input id="sdt_register" type="text" placeholder="Phonenumber"/>  
+                      <span class="phone_register_err"></span>
+                      </div>
+                      <div class="sign-up_password">
+                      <input id="password_register" type="password" placeholder="Password"/>
+                      <span class="pass_register_err"></span>
+                      </div>
+                      <div class="sign-up_repass">
+                      <input id="re_password_register" type="password" placeholder="Re write Password"/>
+                      <span class="re_pass_register_err"></span>
+                      </div>
+                      <div class="sign-up_submit">
+                       <span class="sign-in-status" runat="server" id="Span1"></span>
+                      <input type="submit" class="btn_register-submit" value="Register"/>
+                      </div>
+
+                  </div >
+                  <div id="forgot" class="auth_form">
+                  <h3>Forgot Password</h3>
+                  <div>
+                      <input id="fotgot_email" type="email" placeholder="Email"/>
+                      <input type="submit" value="Submit"/>
+                  </div>
+                  </div>
               </div>
-           </div> 
+          </div> 
         </div>
     </div>
     <script src="asset/js/login_regester.js"></script>
+    <script src="asset/js/Login.js"></script>
+    <script src="asset/js/Register.js"></script>
   </body>
 </html>

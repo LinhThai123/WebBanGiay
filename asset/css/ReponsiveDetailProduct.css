@@ -5,10 +5,10 @@
       }
       .header_nav--menu-bar{
             display:block;
-      }   
+      }
 }
 /* Tablet */
-@media only screen and (min-width:768px) and (max-width: 1023px){
+@media (min-width:739px ) and (max-width:1023px) {
       .hide-on-tablet {
             display: none ; 
       }
@@ -64,7 +64,7 @@
       }
 }
 /* Mobile */
-@media screen and (max-width : 439px) {
+@media screen and (max-width : 739px) {
       .hide-on-mobile {
             display: none ; 
       }
@@ -78,44 +78,60 @@
       }
       .header_nav--menu-bar {
             position: absolute ; 
-            top:0px; 
-            left:10px; 
+            left:15px; 
+            margin-top: 16px;
+            font-size: 22px;
       }
       .header_nav_account_list--item{
             padding : 0px 10px ; 
       }   
-      .slider_text_content {
+      .content_section--heading {
             font-size:22px ; 
             top : 10px ; 
       }
-      .slider_text-headding {
-            font-size:20px ; 
-            margin-bottom : 0px ; 
-      }
-      .slider_text_sub {
-            font-size:13px ; 
-      }
-      .row_link {
-            margin: 10px 0px;
-      }
-      .body-content-2 {
+      .content_section--sub{
+            top :0;
+            font-size:14px 
+      } 
+      .body-content{
             grid-template-columns:auto;
             display: grid;
-            grid-gap: 10px;
+            margin: 0 10px;
+      }
+      .body-content-2{
+            grid-template-columns:auto;
+            display: grid;
+            margin: 0 10px;
       }
       .body-content-3 {
             grid-template-columns:auto;
             display: grid;
-            grid-gap: 10px;
-      }    
-      .home_news_item--content {
-            font-size:16px ; 
+            margin: 0 10px;
       }
-      .home_news_item--evalute{
-            font-size:18px ; 
+      .home_product {
+            margin : 15px 0;  
+      }
+      .detail_product_item-img {
+            width: 100%;
+            height: 250px;
+      }
+      .slider_text_content {
+            bottom : 10px ; 
+      }
+      .slider_text-headding {
+            font-size : 18px ;
+            margin-bottom: 1px;
+            line-height:20px ; 
+      }
+      .slider_text_sub {
+            font-size : 13px ;
+            margin-top:10px ; 
+      }
+      .product_btn--more {
+            margin-left: 32%;
       }
       .container_footer {
-            height: 450px; 
+            height: 250px; 
       }
       .footer-content-3 {
             grid-template-columns: auto;
